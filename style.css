@@ -1,0 +1,272 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.main{
+    background-image: url("images/TR-tr-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 644px;
+    position: relative;
+}
+.main .box{
+    height: 644px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+nav{
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    height: 100px;
+}
+nav img{
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    z-index: 10;
+    position: relative;
+}
+.hero{
+    height: calc(100% - 100px);
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    gap: 23px;
+}
+.hero >:nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+.hero >:nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero >:nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.btn{
+    background-color: rgba(248, 243, 243, 0.021);
+    color: white;
+    border: 1px solid white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+.btn.btn-red{
+    background-color: red;
+    font-size: 20px;
+    padding: 10px 24px;
+    border: red;
+}
+.btn.btn-red-sm{
+    background-color: red;
+    padding: 7px 20px;
+    border: red;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.main input{
+    padding: 12px 101px 12px 14px;
+    background-color: black;
+    opacity: 0.5;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    outline: none;
+}
+.seperation{
+    background-color: grey;
+    height: 7px;
+    position: relative;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+    height: 100%;
+}
+.secImg img{
+    width: 640px;
+    position: relative;
+    z-index: 10;
+}
+.secImg{
+    position: relative;
+
+}
+.secImg video{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    width: 555px;
+    
+}
+.first span:nth-child(1){
+    font-weight: bolder;
+    font-size: 40px;
+}
+.first span:nth-child(2){
+    font-size: 24px;
+    flex-direction: column;
+    display: flex;
+    margin-top: 20px;
+}
+.third .secImg video{
+    max-width: 63%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fqa{
+    color: white;
+    margin-bottom: 200px;
+}
+.fqa h2{
+    text-align: center; 
+    font-size: 48px;
+    font-weight: bolder;
+}
+.faqbox {
+   display: flex;
+   justify-content: space-between;
+   background-color: #2D2D2D;
+   padding: 24px;
+   max-width: 70vw;
+   margin: 10px auto;
+   cursor: pointer;
+   font-size: 24px;
+   transition: all 0.8s ease-out;
+
+}
+.faqbox:hover{
+    background-color: #636262bd;
+}
+.watch{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    font-size: 25px;
+}
+.under input{
+    padding: 12px 101px 12px 14px;
+    background-color: black;
+    opacity: 0.5;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    outline: none;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+footer .questions{
+    padding: 34px 0;
+    font-size: 20px;
+    color: #A8A5A8;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer a{
+    color: white;
+    font-size: 14px;
+    color: #A8A5A8;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.end{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #A8A5A8;
+}
+
+@media screen and (max-width: 1300px){
+    nav{
+        max-width: 90vw;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .secImg img{
+        width: 305px;
+    }
+    .secImg video{
+        width: 265px;
+    }
+    .wtv video{
+        width: 265px;
+        margin-top: -45px;
+    }
+    .hero >:nth-child(1){
+        font-size: 30px;
+    }
+    .hero >:nth-child(2){
+        font-size: 18px;
+    }
+    .hero >:nth-child(3){
+        font-size: 18px;
+    }
+    .hero-buttons{
+        flex-direction: column;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .fqa h2{
+        font-size: 30px;
+    }
+    .faqbox{
+        font-size: 18px;
+    }
+    .first span:nth-child(1){
+        font-size: 30px;
+        
+    }
+    .first span:nth-child(2){
+        font-size: 18px;
+    }
+    .seperation{
+        margin: 20px;
+    }
+}
+
+
